@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    tools:context=".view.fragments.InicioFragment">
+
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_italic"
+        android:text="@string/inicio"
+        android:textColor="@color/amarilloMock"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentPiso"
+        android:layout_below="@+id/tvBienvenido"
+        android:name="com.example.help.view.fragments.PisoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        tools:layout="@layout/fragment_piso" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentCrujia"
+        android:layout_below="@+id/fragmentPiso"
+        android:name="com.example.help.view.fragments.CrujiaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        tools:layout="@layout/fragment_crujia" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentFrio"
+        android:layout_below="@+id/fragmentCrujia"
+        android:name="com.example.help.view.fragments.FrioFragment"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        tools:layout="@layout/fragment_frio" />
+
+</RelativeLayout>

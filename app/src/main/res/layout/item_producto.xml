@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/verdeMock"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvCantidadProducto"
+        android:textColor="@color/verdeLimaMock"
+        tool:text="#"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:textSize="30sp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/tvTipoProducto"
+        android:layout_toEndOf="@+id/tvCantidadProducto"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/amarilloMock"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        tool:text="Producto" />
+
+
+    <TextView
+        android:id="@+id/tvProveedor"
+        android:layout_toEndOf="@+id/tvCantidadProducto"
+        android:layout_below="@+id/tvTipoProducto"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:text="Proveedor" />
+
+    <TextView
+        android:id="@+id/tvUbicacion"
+        android:layout_toEndOf="@+id/tvCantidadProducto"
+        android:layout_below="@+id/tvProveedor"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:text="Ubicacion" />
+
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_toEndOf="@+id/tvCantidadProducto"
+        android:layout_below="@+id/tvUbicacion"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:text="Estado" />
+
+</RelativeLayout>

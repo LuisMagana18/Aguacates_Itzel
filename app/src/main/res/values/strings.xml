@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Itzel</string>
+    <string name="NombreNegocio">Aguacates Itzel</string>
+    <string name="dev">Luis Angel Magaña</string>
+    <!-- Strings Titulos -->
+    <string name="clientes">Clientes</string>
+    <string name="proveedores">Proveedores</string>
+    <string name="inicio">Bienvenido</string>
+    <string name="frio">Frio</string>
+    <string name="piso">Piso</string>
+    <string name="crujia">Crujia</string>
+
+</resources>

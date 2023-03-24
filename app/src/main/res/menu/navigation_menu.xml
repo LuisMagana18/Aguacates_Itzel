@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuInicio"
+        android:icon="@drawable/ic_home_menu"
+        android:title="Pagina Principal" />
+
+    <item
+        android:id="@+id/menuPiso"
+        android:icon="@drawable/ic_piso"
+        android:title="Piso" />
+
+    <item
+        android:id="@+id/menuCrujia"
+        android:icon="@drawable/ic_crujia"
+        android:title="Crujia" />
+
+    <item
+        android:id="@+id/menuFrio"
+        android:icon="@drawable/ic_frio"
+        android:title="Frio" />
+
+    <item android:title="Otros">
+
+        <menu>
+            <item
+                android:id="@+id/menuClientes"
+                android:icon="@drawable/profile"
+                android:title="Clientes" />
+
+            <item
+                android:id="@+id/menuProveedores"
+                android:icon="@drawable/ic_proveedor"
+                android:title="Proveedores" />
+
+        </menu>
+
+    </item>
+
+
+</menu>

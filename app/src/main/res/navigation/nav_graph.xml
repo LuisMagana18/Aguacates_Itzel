@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuInicio">
+
+    <fragment
+        android:id="@+id/menuInicio"
+        android:name="com.example.help.view.fragments.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/menuClientes"
+        android:name="com.example.help.view.fragments.ClienteFragment"
+        android:label="Clientes"
+        tools:layout="@layout/fragment_cliente" />
+    <fragment
+        android:id="@+id/menuCrujia"
+        android:name="com.example.help.view.fragments.CrujiaFragment"
+        android:label="Crujia"
+        tools:layout="@layout/fragment_crujia" />
+    <fragment
+        android:id="@+id/menuFrio"
+        android:name="com.example.help.view.fragments.FrioFragment"
+        android:label="Frio"
+        tools:layout="@layout/fragment_frio" />
+    <fragment
+        android:id="@+id/menuPiso"
+        android:name="com.example.help.view.fragments.PisoFragment"
+        android:label="Piso"
+        tools:layout="@layout/fragment_piso" />
+    <fragment
+        android:id="@+id/menuProveedores"
+        android:name="com.example.help.view.fragments.ProveedorFragment"
+        android:label="Proveedores"
+        tools:layout="@layout/fragment_proveedor" />
+</navigation>

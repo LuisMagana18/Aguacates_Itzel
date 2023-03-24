@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    tools:context=".view.activities.SplashScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/montserrat_medium_italic"
+        android:text="@string/NombreNegocio"
+        android:textColor="@color/amarilloMock"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="204dp"
+        android:layout_height="209dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_app" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/dev"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/blancoMock"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

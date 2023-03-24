@@ -1,0 +1,38 @@
+package com.example.help.view.fragments
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.help.R
+import com.example.help.view.adapters.ClienteAdapter
+import com.example.help.view.adapters.ProductoAdapter
+import com.example.help.view.providers.PersonaProvider
+import com.example.help.view.providers.ProductoProvider
+
+class CrujiaFragment : Fragment() {
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        val vista = inflater.inflate(R.layout.fragment_crujia, container, false)
+        val recyclerView = vista.findViewById<RecyclerView>(R.id.recyclerCrujia)
+
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        recyclerView.itemAnimator = DefaultItemAnimator()
+
+        recyclerView.adapter = ProductoAdapter(ProductoProvider.crujiaLista)
+
+        return vista
+    }
+
+}

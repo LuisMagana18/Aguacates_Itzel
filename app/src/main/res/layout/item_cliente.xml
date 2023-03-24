@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/verdeMock"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivCliente"
+        android:src="@drawable/profile"
+        android:layout_width="40dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/tvNombreCliente"
+        android:layout_toEndOf="@+id/ivCliente"
+        android:layout_marginStart="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/amarilloMock"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tool:text="Cliente Name" />
+
+
+    <TextView
+        android:id="@+id/tvLocalCliente"
+        android:layout_toEndOf="@+id/ivCliente"
+        android:layout_below="@+id/tvNombreCliente"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tool:text="Cliente Localizacion" />
+
+
+    <TextView
+        android:id="@+id/tvEstadoCliente"
+        android:layout_toEndOf="@+id/ivCliente"
+        android:layout_below="@+id/tvLocalCliente"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tool:text="Cliente Estado" />
+
+
+</RelativeLayout>

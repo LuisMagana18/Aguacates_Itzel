@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/verdeMock"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivProveedor"
+        android:src="@drawable/ic_proveedor"
+        android:layout_width="40dp"
+        android:layout_height="60dp"/>
+    <TextView
+        android:id="@+id/tvNombreProveedor"
+        android:layout_toEndOf="@+id/ivProveedor"
+        android:layout_marginStart="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/amarilloMock"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Proveedor Name" />
+
+
+    <TextView
+        android:id="@+id/tvOrigenProveedor"
+        android:layout_below="@id/tvNombreProveedor"
+        android:layout_toEndOf="@+id/ivProveedor"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Origen Proovedor" />
+
+
+    <TextView
+        android:id="@+id/tvViajesProveedor"
+        android:layout_below="@+id/tvOrigenProveedor"
+        android:layout_toEndOf="@+id/ivProveedor"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/blancoMock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proveedor Viajes" />
+
+
+</RelativeLayout>
