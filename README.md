@@ -18,8 +18,8 @@ Generalidades
 - El sistema operativo mínimo requerido es Android Oreo (API Level 24) y soportado hasta Android Tiramisu (API Level 33).
 - Al ser compatible con Android Oreo, la mayoria de los dispositivos Android actualmente en el mercado, son capaces de correr la aplicación.
 
-###Paquetes utilizados
----
+Paquetes utilizados
+-------------
 - Se utilizo la dependencia *rounded image* para el manejo de la imagen del usuario en el menú lateral.
 - Se utilizó viewBinding para reducir código
 - Se utilizó *recyclerview* para mostrar la interfaz de los productos y las personas.
